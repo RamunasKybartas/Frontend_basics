@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- tokie komentarai nugula i html faila ir gali buti matomi brauseryje -->
+<html lang="lt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Žmonės</title>
+    </head> 
+    <body>
+        <h1>Žmonės</h1>
+        <h3>Gerų studentų sąrašas</h3>
+        <hr> 
+        <!-- hr yra horizontali linija -->
+        <ol>
+        <!-- ol - unordered list -->  
+        <!-- ul - unordered list -->
+        {% for zmogus in zmones %}
+            <li>{{ zmogus }}</li>
+            <!-- li - list item uzdeda listo zymejima -->
+        {% endfor %}
+        </ol>
+    </body>
+
+</html>
