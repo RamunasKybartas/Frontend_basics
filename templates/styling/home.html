@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page also HTML styling</title>
+    <style>
+body {
+    background-color: #f6ffea;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("{{ url_for('static', filename='sunrise2.jpg')}}");
+    background-size: cover;
+}
+
+h1, h3 { 
+    /* tekstas centruotas */
+    border: 2px solid #922; 
+    background-color: #fff;
+    /* vidinis atitraukimas per  reliatyvu elementa rem*/
+    padding: 1rem;
+    text-align: center;
+    color: #591;
+    /* plotis puse ekrano (50vw), vw yra visas ekranas */ 
+    width: 50vw;
+    /* isorinis remelis 0 nuo virsaus ir apacios. auto kad centruoti */
+    margin: 0.5rem auto 0;
+}
+h3 {
+    /* keiciam tik h3*/
+    border-bottom-width: 10px;
+    border-radius: 30px;
+    ;
+}
+.antras {
+    color: #119; 
+    letter-spacing: 2px;
+}
+.septyniasdesimt {
+    width: fit-content;
+}
+.right-box {
+    display: inline;
+    float: right;
+    width: 33%;
+    border: 3px #922;
+    background-color: aqua;
+    margin-top: -1rem;
+}
+
+h1.highlight {
+    background-color: pink;
+}
+
+.highlight {
+    background-color: yellow;
+    text-align: center;
+}
+.buttons {
+    border-radius: 2rem;
+    width: 10vw;
+}
+img {
+    max-width: 10%;
+    float: left;
+    margin-right: 2rem;
+    border: 5px solid #282 ;
+}
+    </style>
+</head>
+<body>
+    <h1 class="highlight">Hello world</h1>
+    <p class="highlight" >everything seems working</p> 
+    <h2>        
+        <a href="/stuff">
+            <button class="buttons" type="button">Stuff</button>
+        </a>
+        <a href="/edits">
+            <button class="buttons" type="button">Edits</button>
+        </a>
+        <a href="/news">
+            <button class="buttons" type="button">News</button></a>
+    </h2>
+    <h3 class="antras septyniasdesimt">Affronting imprudence do he everything</h3><img src="https://i.scdn.co/image/ab67616d00001e024bd6cabae0b92720f0e6f9dd"><p>On am we offices expense thought. Its hence ten smile age means. Seven chief sight far point any. Of so high into easy. Dashwoods eagerness oh extensive as discourse sportsman frankness. Husbands see disposed surprise likewise humoured yet pleasure. Fifteen no inquiry cordial so resolve garrets as. Impression was estimating surrounded solicitude indulgence son shy.</p><p class="antras" style="margin-left: 5rem">Article evident arrived express highest men did boy. Mistress sensible entirely am so. Quick can manor smart money hopes worth too. Comfort produce husband boy her had hearing. Law others theirs passed but wishes. You day real less till dear read. Considered use dispatched melancholy sympathize discretion led. Oh feel if up to till like.</p><p title="cia pastraipa">Certainty determine at of arranging perceived situation or. Or wholly pretty county in oppose. Favour met itself wanted settle put garret twenty. In astonished apartments resolution so an it. Unsatiable on by contrasted to reasonable companions an. On otherwise no admitting to suspicion furniture it.</p><p class="right-box">At ourselves direction believing do he departure. Celebrated her had sentiments understood are projection set. Possession ye no mr unaffected remarkably at. Wrote house in never fruit up. Pasture imagine my garrets an he. However distant she request behaved see nothing. Talking settled at pleased an of me brother weather.</p><p>Effects present letters inquiry no an removed or friends. Desire behind latter me though in. Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed.</p><p>Smile spoke total few great had never their too. Amongst moments do in arrived at my replied. Fat weddings servants but man believed prospect. Companions understood is as especially pianoforte connection introduced. Nay newspaper can sportsman are admitting gentleman belonging his. Is oppose no he summer lovers twenty in. Not his difficulty boisterous surrounded bed. Seems folly if in given scale. Sex contented dependent conveying advantage can use.</p><p>Ignorant branched humanity led now marianne too strongly entrance. Rose to shew bore no ye of paid rent form. Old design are dinner better nearer silent excuse. She which are maids boy sense her shade. Considered reasonable we affronting on expression in. So cordial anxious mr delight. Shot his has must wish from sell nay. Remark fat set why are sudden depend change entire wanted. Performed remainder attending led fat residence far.</p><p>Conveying or northward offending admitting perfectly my. Colonel gravity get thought fat smiling add but. Wonder twenty hunted and put income set desire expect. Am cottage calling my is mistake cousins talking up. Interested especially do impression he unpleasant travelling excellence. All few our knew time done draw ask.</p><p style="color: #912">Do so written as raising parlors spirits mr elderly. Made late in of high left hold. Carried females of up highest calling. Limits marked led silent dining her she far. Sir but elegance marriage dwelling likewise position old pleasure men. Dissimilar themselves simplicity no of contrasted as. Delay great day hours men. Stuff front to do allow to asked he.</p>
+</body>
+</html>

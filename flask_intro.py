@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/") # su siuo dekoratorium nurodom adresa "/" pagrindinio katalogo pagrindinis puslapis
 def home():
-    return "Veikia"
+    return render_template("/home.html")
 
 @app.route("/sveikas/<name>") # narsykleje tarpas yra %20
 def user(name):
@@ -26,6 +26,10 @@ def login():
 @app.route("/hello")
 def hello():
     return render_template("hello.html", **request.args)    
+
+@app.route("/ar_keliamieji")
+def ar_keliamieji():
+    return render_template("ar_keliamieji.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
