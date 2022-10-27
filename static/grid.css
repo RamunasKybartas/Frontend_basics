@@ -1,0 +1,42 @@
+/* <-- geriau apsirasyti bendra container klase ir isskaidyti, ne kaip mano container 3 ir container 4, nes kartojasi kodas --> */
+.container {
+    display: grid;
+    grid-template-rows: auto;
+    width: 70vw;
+    margin: 0 auto;
+    gap: 0.2rem 0.5rem;
+    margin-top: 0.5rem;
+    color: red;
+}
+.container4 {
+    /* grid-template-columns: calc(25% - 0.5rem * 3 / 4) calc(25% - 0.5rem * 3 / 4) calc(25% - 0.5rem * 3 / 4) calc(25% - 0.5rem * 3 / 4); */
+    /* grid-template-columns: auto auto auto auto; */
+    /* <!-- auto istampo lenteles pagal turini, jeigu daugiau teksto tai istampys-->
+    <!-- fr neistampo lenteliu pagal teksta, visada pasilieka originalus dydziai--> */
+    /* grid-template-columns: repeat(4, auto);   */
+    grid-template-columns: repeat(4, 1fr) ;
+}
+.container3 {
+    grid-template-columns: 1fr 2fr 1fr;
+    /* grid-template-columns: calc(30% - 0.5rem * 2 / 3) calc(40% - 0.5rem * 2 / 3) calc(30% - 0.5rem * 2 / 3); */
+    /* grid-template-columns: repeat(3, calc(100% / 3 - 0.5rem * 2 / 3)); */
+}
+.item {
+    background-color: rgb(1, 10, 17);
+    margin: 0.5rem;
+    padding: 1rem;
+}
+
+.col-double {
+    grid-column: span 2;
+}
+
+.row-double {
+    grid-row: span 2;
+}
+.meniu {
+    grid-column: span 3;
+}
+.footer {
+    grid-column: span 3;
+}

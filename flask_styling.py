@@ -18,5 +18,17 @@ def edits():
 def stuff():
     return render_template("/styling/stuff.html")
 
+@app.route("/containers")
+def containers():
+    return render_template("/styling/containers.html")
+
+@app.route("/grid")
+def grid():
+    return render_template("/styling/grid.html")
+
+@app.route("/page")
+def page():
+    return render_template("/styling/fullpage.html")
+
 if __name__ == "__main__":
     app.run(debug=True)

@@ -1,0 +1,72 @@
+body {
+    display: grid;
+    grid-template-rows: 3rem auto 10rem;
+    /* grid-template-columns: auto 20%; */
+    margin: 0rem;
+    min-height: 100vh;
+}
+
+header {
+    background-color: chocolate;
+    color:antiquewhite;
+    display: grid;
+    place-items: stretch center;
+
+    /* -ms-grid-column-span: 2; */
+}
+header a {
+    color:#eee;
+    padding: 0.75rem;
+    font-size: 120%;
+    text-decoration: none;
+    place-items: stretch stretch;
+}
+
+footer {
+    background-color: chocolate;
+    display: grid;
+    place-items: stretch center;
+
+    /* max-height: 5rem; */
+    /* -ms-grid-column-span: 2; */
+}
+
+main {
+    background: url("/static/sunrise2.jpg");
+    background-size: cover;
+    background-position: center center;
+    display:grid;
+    place-items: stretch stretch;
+}
+.container {
+    width: 1100px;
+    max-width: 90vw;
+}
+main .container {
+    background-color:rgba(194, 176, 176, 0.3);
+    display: grid;
+    grid-template-columns: auto 20%;
+    place-items: stretch center;
+}
+.sidebar {
+    background-color:rgba(194, 176, 176, 0.3);
+}
+.sidebar h3 {
+    text-align: center ;
+    width: fit-content;
+}
+.sidebar h1 {
+    text-align: center;
+    border-bottom: 4px solid rgba(194, 176, 176, 0.3);
+}
+header .container {
+    display:grid;
+    place-items: center space-between;
+}
+
+.logo {
+    max-height: 3rem;
+}
+header a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
